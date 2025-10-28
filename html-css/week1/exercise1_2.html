@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>exercise 1 and 2</title>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <table>
+     <caption>Available products</caption>
+     <thead>
+       <tr>
+         <th>Product</th>
+         <th>Price</th>
+         <th>In stock</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>UFO</td>
+         <td>130 kr</td>
+         <td>yes</td>
+       </tr>
+       <tr>
+         <td>Unicorn</td>
+         <td>150kr</td>
+         <td>yes</td>
+       </tr>
+       <tr>
+         <td>Zeo</td>
+         <td>230 kr</td>
+         <td>yes</td>
+       </tr>
+     </tbody>
+    </table> 
+    <br><br>
+   <h3>submission form</h3>
+   <form class="form1">     
+     <label for="first-name">First name:</label>
+       <input type="text" id="first-name" placeholder="Fist Name" required>
+       <br>
+     <label for="last-name">Last name:</label>
+       <input type="text" id="last-name" placeholder="Last Name" required>
+       <br>
+     <label for="title">Title:</label>
+       <select id="title">
+         <option value="" selected disabled>Select title </option>
+         <option value="Mr">Mr</option>
+         <option value="Ms">Ms</option>
+         <option value="Mrs">Mrs</option>
+      </select>
+      <br>
+    <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="fx: email@gmail.com">
+      <br>
+      <label for="message">Your opinion:</label> <br>
+      <textarea id="message" cols="30" rows="5" placeholder="Leave your message here:"></textarea>
+      <input type="submit" id="submit" value="submit">
+    </form>
+  </body>
+</html>

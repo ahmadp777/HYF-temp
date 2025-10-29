@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: Arial, Verdana, sans-serif;
+  background-color: #e8f9e6;
+}
+a {
+  text-decoration: none;
+}
+.fix-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;  
+  background: #20297c;  
+}
+.fix-navbar a {
+  display: inline-block;  
+  color: #fff;  
+  padding: 8px;  
+}
+header {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #ddd;
+  border-bottom: 1px solid #4387cc;
+  padding: 1px;
+}
+/* animated color-changing header  */
+header h1 {
+  animation: myBlog 3s infinite;
+  font-weight: 800;
+  text-shadow: 0 0 5px;
+}
+@keyframes myBlog {
+  0% {color:red;}
+  50% {color: blue;}
+  100% {color:green;}
+}
+header h2 {
+  font-weight: 500;
+}
+main {
+  line-height: 1.7;
+  padding: 15px;
+  text-indent: 15px;
+  background: url("https://img.freepik.com/premium-vector/blue-sky-with-lens-flare-bokeh-background_87521-1563.jpg?w=996");
+  background-size: cover;
+}
+main h2 {
+  text-indent: 0;
+  text-align: center;
+}
+.website-link a:hover {
+ font-weight: bold;
+}
+aside {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-indent: 8px;
+}
+footer {
+  display: flex; 
+  justify-content: center;
+  background-color: #aaa;
+  padding: 6px;  
+}
+/* mobile-first design */
+@media only screen and (min-width: 600px) {
+  main{
+    float: left;
+    width: 75%
+  } 
+  aside {
+    float: right;
+    width: 25%;
+  }
+  footer {
+    clear: both;
+  }
+}

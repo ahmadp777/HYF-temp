@@ -1,2 +1,3 @@
 My assignments
 Here is place to register my assignments.
+It is just for testing push and pull requests.
